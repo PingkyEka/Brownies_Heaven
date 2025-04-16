@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #ff69b4, #ffb6c1); /* Gradiasi warna pink */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-family: 'Pacifico', cursive; /* Menggunakan font khusus */
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5em;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.nav-links a {
+    display: inline-flex; /* Menjaga ikon dan teks tetap sejajar */
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px; /* Perluas area sentuh */
+    min-height: 40px; /* Menentukan tinggi minimal */
+    min-width: 120px; /* Menentukan lebar minimal */
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-links a svg {
+    width: 20px; /* Sesuaikan ukuran ikon */
+    height: 20px;
+}
+
+
+.nav-links a:hover {
+    color: #ff69b4;
+}
+
+/* Styling untuk Judul Brownies Heaven */
+.hero {
+    margin-top: -50px; /* Menurunkan jarak antara header dan judul */
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #5C4033; /* Coklat tua */
+    text-shadow: 3px 3px 10px rgba(92, 64, 51, 0.6);
+}
+
+/* Styling untuk Subjudul Brownies Heaven */
+.hero p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8B4513; /* Coklat sedang */
+    text-shadow: 2px 2px 5px rgba(139, 69, 19, 0.5);
+    margin-top: -10px; /* Mendekatkan jarak antara judul dan subjudul */
+}
+
+/* Carousel Wrapper */
+.carousel-container {
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: max-content;
+    animation: slide 10s linear infinite;
+}
+
+/* Animasi geser otomatis */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Sesuaikan agar sesuai jumlah gambar */
+}
+
+/* Duplikat track agar looping mulus */
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+}
+
+/* Carousel Item */
+.carousel-item {
+    flex: 0 0 auto;
+    width: 250px;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.about-us {
+    max-width: 800px; /* Menentukan lebar maksimal agar teks tidak terlalu melebar */
+    margin: auto; /* Memastikan teks berada di tengah */
+    padding: 20px; /* Memberikan ruang agar teks tidak terlalu ke pinggir */
+    text-align: justify; /* Membuat teks lebih rapi */
+}
+
+.about-us h1, .about-us h2 {
+    text-align: center; /* Judul dibuat rata tengah */
+    color: #ff69b4; /* Warna pink senada */
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Styling untuk judul "Hubungi Kami" */
+.contact h1 {
+    font-size: 2rem;
+    color: #ff69b4; /* Warna pink senada */
+    margin-bottom: 15px;
+}
+
+/* Styling teks deskripsi */
+.contact p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Container untuk informasi kontak */
+.contact-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Styling untuk informasi kontak */
+.contact-info h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Link kontak */
+.contact-info a {
+    text-decoration: none;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer tetap di bawah */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styling Footer */
+footer {
+    text-align: center;
+    padding: 10px; /* Mengecilkan padding footer */
+    margin-top: 100px; /* Menurunkan posisi footer untuk menambah jarak dari gambar */
+    background: linear-gradient(90deg, #ff69b4, #ffb6c1); /* Gradiasi warna pink */
+    color: white;
+    font-size: 0.8rem; /* Mengecilkan ukuran font footer */
+    font-weight: bold;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product-info {
+    margin-top: 10px;
+}
+.btn-order {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.benefits {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8B4513;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.benefit-card {
+    background: #ffb6c1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    font-size: 2.5em;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+.benefit-card h3 {
+    color: black;
+    margin-bottom: 15px;
+}
